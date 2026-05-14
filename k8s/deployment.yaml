@@ -1,4 +1,4 @@
-apiVersion: apps/v1
+apiVersion: apps/v2
 kind: Deployment
 metadata:
   name: springboot-demo
@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: springboot-demo
-        image: yourdockerhubusername/springboot-demo:v1
+        image: akankshavarma/springboot-demo:v2
         ports:
         - containerPort: 8082
